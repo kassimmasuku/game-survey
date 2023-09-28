@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>
+      Game Cafe Survey Form
+    </title>
+  </head>
+  <body>
+    <div class="menu">
+          <h1 id="title"> Game Cafe Survey Form</h1>
+    <p id="description">Thank for taking your time to help us improve our Gaming Cafe</p> 
+    <form id="survey-form">
+      <label for="name" id="name-label">Enter your Name<input type="text" id="name" name="name" placeholder="Name" required></label>
+      <label for="name" id="email-label">Enter your Email: <input type="email" id="email" name="email" placeholder="Email" required></label>
+      <label for="name" id="number-label">Enter your Age: <input type="number" id="number" name="number" min="13" max="120" placeholder="Age" required></label>
+      <label>How would you Describe Our Services
+        <select id="dropdown">
+          <option value="">(selct one)</option>
+          <option value="excellent">Excellent</option>
+          <option value="medium">Medium</option>
+          <option value="poor">Poor</option>
+          <option value="proffessional">Proffessional</option>
+          <option value="poor">very Poor</option>
+        </select>
+      </label>
+     <fieldset class="fieldset">
+        <label>Would you Recommend anyone to the Game Cafe</label>
+      <label><input type="radio" name="recommend" value="Definitely" class="inline"> Definitely</label>
+      <label><input type="radio" name="recommend" value="Definitely" class="inline"> Maybe</label>
+      <label><input type="radio" name="recommend" value="Not sure" class="inline"> Not Sure</label>
+      <label><input type="radio" name="recommend" value="never" class="inline"> Never</label>
+     </fieldset>
+     <fieldset class="fieldset">
+             <label>What would you like to be improved</label>
+      <label><input type="checkbox" value="Types of games" class="inline"> Type of Games</label>
+            <label><input type="checkbox" value="clean environment" class="inline"> Clean environment</label>
+                  <label><input type="checkbox" value="customer servives" class="inline"> Customer service</label>
+                        <label><input type="checkbox" value="working hours" class="inline"> Working hours</label>
+                              <label><input type="checkbox" value="quality of food" class="inline"> Types of Devices</label>
+     </fieldset>
+                             <label>Additional Comment <textarea></textarea></label>
+                             <input id="submit" type="submit" value="Submit">
+    </form> 
+    </div>
+  </body>
+
+</html>
